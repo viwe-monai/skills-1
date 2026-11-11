@@ -21,6 +21,8 @@ Format a round like so:
 ➡️ <your recommended answer>
 ```
 
+End each round with a blank **answer sheet**: one line per question, the number plus a short title and nothing after the colon (e.g. `1. Question title: `), so the user can paste it back and fill in each line.
+
 Word each question so "yes" accepts your recommended answer.
 
 Each round the user answers reshapes the tree: settled decisions push the frontier outward and unblock questions that depended on them. Recompute the frontier and ask the next round. A question whose answer depends on another question still open in this round belongs to a _later_ round, not this one.
