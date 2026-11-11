@@ -73,6 +73,8 @@ Issue both sub-agent calls together, in the foreground, and aggregate the report
 
 If the spec is missing, skip the Spec sub-agent and note this in the final report.
 
+When a diff reduces documentation — removes operational instructions (runbooks, recipes, config steps, verification steps) or rewrites verification requirements — add one line to both briefs: verify each removed item is preserved elsewhere in the change, deliberately retired with justification, or moved to another document with a pointer left behind, and that changed verification requirements keep the scope the change needs (frontend, backend, or cross-app) and contradict nothing left standing; report any failure. Skip otherwise.
+
 ### 5. Aggregate
 
 Present the two reports under `## Standards` and `## Spec` headings, verbatim or lightly cleaned. Do **not** merge or rerank findings, because the two axes are deliberately separate (see _Why two axes_).
